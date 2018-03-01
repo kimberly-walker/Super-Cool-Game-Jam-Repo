@@ -25,7 +25,8 @@ public class Test : MonoBehaviour {
 		Debug.Log (counter);
 
 		float x = cube.transform.position.x;
-		cube.transform.position = new Vector3 (x + 0.1f, 2, 2);
+		float y = cube.transform.position.y;
+		cube.transform.position = new Vector3 (x + 0.1f, y + 0.1f, 2);
 
 	}
 }
